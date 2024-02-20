@@ -1,0 +1,28 @@
+; opcodes.dat
+; A list of valid instructions and their opcodes.
+; ============================================
+;     Mnemonic       Arg            Opcode
+; ============================================
+      read_char      -              TLTS
+      read_num       -              TLTT
+      output_char    -              TLSS
+      output_num     -              TLST
+      push           literal        SS
+      duplicate      -              SLS
+      swap           -              SLT
+      discard        -              SLL
+      copy           literal        STS
+      slide          literal        STL
+      add            -              TSSS
+      sub            -              TSST
+      mul            -              TSSL
+      div            -              TSTS
+      mod            -              TSTT
+      call           label          LST
+      jump           label          LSL
+      jz             label          LTS
+      jn             label          LTT
+      return         -              LTL
+      exit           -              LLL
+      store          -              TTS
+      retrieve       -              TTT
